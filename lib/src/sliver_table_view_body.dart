@@ -56,6 +56,7 @@ class SliverTableViewBody extends StatelessWidget {
       delegate: SliverChildBuilderDelegate(
         childCount: rowCount,
         addRepaintBoundaries: false,
+        addAutomaticKeepAlives: false,
         (context, index) =>
             rowBuilder(context, index, contentBuilder) ??
             placeholder ??
